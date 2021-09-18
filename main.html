@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div
+        class="container-main">
+        <h1
+            class="title"
+        >
+            Lista de Compras
+        </h1>
+        <hr>
+        <div
+            class="container-controller"
+        >
+            <h3
+                class="title"
+            >
+                Entre com o nome do item</h5>
+            <input
+                type="text"
+                id="item"
+                placeholder="Arroz... feijão..."
+            />
+            <button
+                onclick="adicionarItem()"
+            >
+                Adicionar
+            </button>
+            <script src="script.js"></script>
+        </div>
+        <div
+            id="containerItems"
+            class="container-items"
+        >
+            <h1></h1>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .container-main {
+        color: rgb(200, 200, 200);
+        width: 500px;
+        height: 500px;
+        border: 2px solid;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+    }
+    .container-controller {
+        color: rgb(200, 200, 200);
+        text-align: center;
+        text-justify: center;
+        overflow-y: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 20%;
+        border: 1px solid;
+        color:rgb(226, 222, 222);
+        border-radius: 10px;
+    }
+    .container-items {
+        overflow-y: auto;
+        height: 55%;
+    }
+    .title {
+        text-justify: center;
+        text-align: center;
+        color: rgb(73, 73, 73);
+    }
+</style>
